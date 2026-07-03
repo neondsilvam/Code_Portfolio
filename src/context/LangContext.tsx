@@ -17,9 +17,10 @@ const translations: Record<Lang, Translations> = {
           description:
               "Soy graduado de la Universidad de los Andes en Colombia, con un título en Narrativas Digitales y dos especializaciones: Cine, Video y Animación, y Computación Visual. Actualmente, curso un programa anual en Vancouver Film School, enfocado en programación de videojuegos, desarrollo web y aplicaciones móviles.\n" +
               "\n" +
-              "Durante los últimos dos años, he orientado mi formación profesional hacia la programación, el desarrollo de aplicaciones web y el desarrollo móvil, fortaleciendo tanto mis conocimientos técnicos como mi capacidad para crear soluciones digitales escalables e innovadoras.\n" +
+              "Durante el último año, he orientado mi formación profesional hacia la programación y desarrollo de juegos tanto para PC como para móvil, fortaleciendo tanto mis conocimientos técnicos como mi capacidad para crear soluciones digitales escalables e innovadoras.\n" +
               "\n" +
-              "Además, he trabajado con tecnologías y lenguajes como Python, C++, Kotlin y C#, así como con herramientas y frameworks complementarios como Processing, p5.js, CMD Script, HLSL y TypeScript. Actualmente, continúo ampliando mis conocimientos y experiencia, con un enfoque principal en React, React Native y Vue, tecnologías que utilizo para desarrollar aplicaciones modernas, eficientes y centradas en la experiencia del usuario.",
+              "Además, he trabajado con multiples tecnologías y de 10 lenguajes de programación. Actualmente, continúo ampliando mis conocimientos y experiencia, con un enfoque principal en React, React Native y Vue, tecnologías que utilizo para desarrollar aplicaciones modernas, eficientes y centradas en la experiencia del usuario." +
+              " Mi Objetivo es llegar a trabajar como desarrollador de frontend UI/UX o de programador de sistemas de juegos.",
           tags: ['HTML - 2 años', 'CSS - 2 años', 'JavaScript - 1 año', 'C# - 1 año', 'Vue - 6 meses', 'React - 6 meses', 'React Native - 6 meses', 'C++ - 6 meses'],
       },
     gameExp: {
@@ -69,13 +70,13 @@ const translations: Record<Lang, Translations> = {
     },
       perfil: {
           name: 'Julian D Silva',
-          role: 'Frontend Developer || Mobile programmer',
+          role: 'Frontend Game Developer || Mobile Gameplay programmer',
           description:
-              "I graduated from Universidad de los Andes with a degree in Digital Narratives and two specializations: Film, Video and Animation, and Visual Computing. I am currently enrolled in a one-year program at Vancouver Film School focused on video game programming, web development, and mobile application development.\n" +
-              "\n" +
-              "Over the past two years, I have dedicated my professional development to programming, web application development, and mobile technologies, strengthening both my technical expertise and my ability to build scalable and innovative digital solutions.\n" +
-              "\n" +
-              "In addition, I have worked with technologies and programming languages such as Python, C++, Kotlin, and C#, as well as complementary tools and frameworks including Processing, p5.js, CMD Script, HLSL, and TypeScript. I am continuously expanding my knowledge and experience, with a primary focus on React, React Native, and Vue, which I use to create modern, efficient, and user-centered applications.",
+              "I hold a degree in Digital Storytelling from Universidad de los Andes (Colombia), with specializations in Film, Video and Animation, and Visual Computing." +
+              " I am currently enrolled in an intensive program at Vancouver Film School, focused on video game programming, web development, and mobile application development." +
+              " Over the past year, I have concentrated my professional growth on software development, strengthening my skills in programming frontend development and systems for games I  both PC and Mobile platforms, with a particular interest in building effective digital solutions." +
+              " I have worked with multiple technologies and  10 code languages. I am currently expanding my knowledge with a primary focus on Unity programming and game frontend programming, developing modern, efficient applications with a strong emphasis on user experience." +
+              " I am goaling to work or programming systems or developing frontend UI/UX elements.  ",
           tags: ['HTML - 2 years', 'CSS - 2 years', 'JavaScript - 1 year', 'C# - 1 year', 'Vue - 6 months', 'React - 6 months', 'React Native - 6 months', 'C++ - 6 months'],
       },
     gameExp: {
@@ -125,7 +126,7 @@ interface LangContextValue {
 const LangContext = createContext<LangContextValue | null>(null)
 
 export function LangProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Lang>('es')
+  const [lang, setLang] = useState<Lang>('en')
 
   const toggleLang = () => setLang((prev) => (prev === 'es' ? 'en' : 'es'))
 
